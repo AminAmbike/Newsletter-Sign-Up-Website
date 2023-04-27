@@ -33,11 +33,11 @@ app.post("/", function(req,res) {
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us21.api.mailchimp.com/3.0/lists/fd9376cd03";
+    const url = "https://us21.api.mailchimp.com/3.0/lists/**********";
 
     const options = {
         method: "POST",
-        auth: "Amin1:ebaf546709f5afded555f56ea43c1cd9-us21",
+        auth: "Amin1:**********************************",
 
     }
 
@@ -56,10 +56,6 @@ app.post("/", function(req,res) {
 
     request.write(jsonData);
     request.end();
-
-    // md-thbykCdABFWpe_UmJHb_QA
-    // ebaf546709f5afded555f56ea43c1cd9-us21
-    // fd9376cd03
 
 });
 
